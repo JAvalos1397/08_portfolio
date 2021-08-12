@@ -3,15 +3,29 @@
   --darkGray: rgba(53,53,53,255)
 
 }
-
+*{
+  border:2px solid black;
+}
+main {
+  margin: 2% 0;
+}
 body {
   background-image: url(./image/background.jpg);
 }
 
-.card {
+.primary {
   background-color: var(--darkGray);
+  border: 1px var(--gray) solid;
+  color: var(--gray)
 }
 
-.gray {
-  color:var(--gray)
+.secondary {
+  background-color: var(--gray);
+  border: 1px var(--darkGray) solid;
 }
+
+.profile {
+height: 20vmax;
+margin: auto;
+}
+
