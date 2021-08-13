@@ -3,9 +3,9 @@
   --darkGray: rgba(53,53,53,255)
 
 }
-*{
+/* *{
   border:2px solid black;
-}
+} */
 main {
   margin: 2% 0;
 }
@@ -25,7 +25,20 @@ body {
 }
 
 .profile {
-height: 20vmax;
+width: 30rem;
 margin: auto;
 }
 
+.container {
+  margin-top: 1%;
+}
+
+.card {
+width: 30rem;
+margin: auto;
+border: 2px var(--gray) solid;
+}
+
+@media screen {
+  
+}
