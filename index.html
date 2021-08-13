@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets\style.css">
 
 </head>
@@ -34,16 +34,16 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#aboutMe">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Projects</a>
+              <a class="nav-link" href="#project">My Projects</a>
             </li>
             <li class="nav-item">
-              <a href="pdf_server.php?file=pdffilename">Download my eBook</a>
+              <a class="nav-link" href="./assets/image/JoseResume.pdf" target="blank_">Download Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="#contact">Contacts</a>
             </li>
           </ul>
         </div>
@@ -54,35 +54,36 @@
 
   <main>
     <!-- About Me -->
-    <div class="container  primary">
+    <div class="container" id="aboutMe">
       <div class="row">
         <div class="col-sm-8">
-          <h2>About Me</h2>
-          <p class="text-lg"> Hello! My name is Jose Avalos. I'm currently doing boot camp to learn the crafts of webdevlopment. I'm
+          <h2 class="text-3xl secondary">About Me</h2>
+          <p class="primary text-xl leading-relaxed"> Hello! My name is Jose. I'm currently doing boot camp to learn the
+            crafts of webdevlopment. I'm
             hard worker that gets it done. As you'll see in the bottom are my many project. I love board games, video
             games, sports, and card games! Anything that there is winner involved. As you can see I'm very competive,
             but I think that just want makes me strive to get better. Look forward to future projects!</p>
         </div>
 
-        <div class="col-md-4 ">
+        <div class="col-md-4">
           <img src="./assets/image/profile.jpg" alt="Picture of Jose" class="profile">
         </div>
       </div>
     </div>
     <!-- Projects -->
-    <div class="container">
-
+    <div class="container" id="project">
+      <div class="row secondary">
+        <h2 class="text-3xl secondary">Projects</h2>
+      </div>
       <div class="row">
-
         <div class="col-md-6 ">
           <div class="card">
             <img class="card-img-top" src="./assets/image/homePage.png" alt="National Park Searcher">
             <div class="card-body primary">
 
               <h5 class="card-title">National Park Searcher</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn secondary">Go somewhere</a>
+              <p class="card-text">This is my first Group Project. We utlizied our knowledge to make easy to use National Park Searcher with added forecast</p>
+              <a href="https://github.com/Cumar-khalif/U.S.-National-Parks" class="btn secondary">Travel to page</a>
             </div>
           </div>
         </div>
@@ -92,10 +93,9 @@
             <div class="card-body primary">
 
               <h5 class="card-title">Workday Scheduler</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn secondary">Go somewhere</a>
+              <p class="card-text">In this project I utlizied the local storage and getTime() method to make a workday scheduler that you can save events throughout the day
+              </p>
+              <a href="https://github.com/pepsi1397/Work_Day_Scheduler" class="btn secondary">Travel to page</a>
 
             </div>
           </div>
@@ -106,9 +106,8 @@
             <div class="card-body primary">
 
               <h5 class="card-title">Pixar Quiz</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn secondary">Go somewhere</a>
+              <p class="card-text">Get prepared to take the Pixar quiz. In here I have utilized the local storage and for loops to prompt question and keep score.</p>
+              <a href="https://github.com/pepsi1397/quiz" class="btn secondary">Travel to page</a>
             </div>
           </div>
         </div>
@@ -118,10 +117,8 @@
             <div class="card-body primary">
 
               <h5 class="card-title">Random Password Generator</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn secondary">Go somewhere</a>
+              <p class="card-text">Create your own unique password here. Using If statements and the alerts create your own parameters for your password.</p>
+              <a href="https://github.com/pepsi1397/rn-password-generator" class="btn secondary">Travel to page</a>
 
             </div>
           </div>
@@ -130,20 +127,24 @@
     </div>
 
 
-      <!-- Contacts -->
-      <div class="container  secondary">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
+    <!-- Contacts -->
+    <div class="container  secondary " id="contacts">
+      <div class="row">
+        <h2 class="text-2xl">Contacts</h2>
+      </div>
+      <hr>
+      <div class="row text-2xl">
+        <div class="col-sm">
+          Email: avaljose@hotmail.com
+        </div>
+        <div class="col-sm">
+          <a href="https://github.com/pepsi1397">Git Hub: Pepsi1397</a>
+        </div>
+        <div class="col-sm">
+          <a href="https://www.linkedin.com/in/jose-avalos-892a30101/">Linkedin Account</a>
         </div>
       </div>
+    </div>
   </main>
 </body>
 

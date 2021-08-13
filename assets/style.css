@@ -13,6 +13,9 @@ body {
   background-image: url(./image/background.jpg);
 }
 
+a:link {
+  color: red;
+}
 .primary {
   background-color: var(--darkGray);
   border: 1px var(--gray) solid;
@@ -25,7 +28,7 @@ body {
 }
 
 .profile {
-width: 30rem;
+height: 35rem;
 margin: auto;
 }
 
@@ -39,6 +42,8 @@ margin: auto;
 border: 2px var(--gray) solid;
 }
 
-@media screen {
-  
+@media screen (min-width:) {
+  body {
+    padding: 0 50%;
+  }
 }
